@@ -1,0 +1,106 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aerosmith Bio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #776666;
+        }
+        header {
+            background-color: #868686;
+            color: #a2be00;
+            padding: 20px;
+            text-align: center;
+    </style>
+    </head>
+    <body>
+    <header>
+        <h1>Aerosmith Bio</h1>
+    </header>
+    <nav>
+        <button id="band-members" class="list">Band Members</button>
+        <button id="discography" class="list">Discography</button>
+        <button id"tour-dates" class="list">Tour Dates</button>
+    </nav>
+    <section id="band-members">
+        <h2>Band Members</h2>
+        <p>Aerosmith is founded in Boston Massachusets and it also includes band Members:</p>
+        <ul>
+            <li>Steven Tyler - Vocals</li>
+            <li>Joe Perry - Guitar</li>
+            <li>Tom Hamilton - Bass</li>
+            <li>Brad Whitford - Guitar</li>
+            <li>Joey Kramer - Drums</li>
+        </ul>
+    </section>
+    <section id="discography">
+        <h2>Discography</h2>
+        <p>Aerosmith has released numerous albums over the years, including:</p>
+        <ul>
+            <li>Aerosmith (1973)</li>
+            <li>Toys in the Attic (1975)</li>
+            <li>Rocks (1976)</li>
+        </ul>
+    </section>
+    <section id="tour-dates">
+        <h2>Tour Dates</h2>
+        <p>Check out Aerosmith's upcoming tour dates:</p>
+         <li>OCT11 AMALIE ARENA TAMPA, FL</li>
+         <li>OCT14 STATE FARM ARENA ATLANTA, GA</li>
+    </section>
+    <aside>
+        <img src="gettyimages-85514814-612x612" alt="Aerosmith Band">
+        <p>Aerosmith Band Group Members</p>
+    </aside>
+    <footer>
+        <h3>Contact Aerosmith</h3>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Submit">
+        </form>
+    </footer>
+</body>
+</html>
